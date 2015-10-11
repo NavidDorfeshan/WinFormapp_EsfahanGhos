@@ -1,0 +1,817 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5D4E85F4-A035-4AB3-85A2-B3D6283F6DA9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EsfahanGhos</RootNamespace>
+    <AssemblyName>EsfahanGhos</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Designcontest-Ecommerce-Business-Company-building.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServerCompact">
+      <HintPath>..\packages\EntityFramework.SqlServerCompact.6.1.2\lib\net40\EntityFramework.SqlServerCompact.dll</HintPath>
+    </Reference>
+    <Reference Include="EQATEC.Analytics.Monitor, Version=3.2.1.0, Culture=neutral, PublicKeyToken=213c7c68adb58a17, processorArchitecture=MSIL" />
+    <Reference Include="FarsiCalendarComponent, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>C:\Users\navid.D\Downloads\FarsiCalendarComponent.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="RadControlSpy, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Base">
+      <HintPath>..\..\..\..\..\..\c#\Session12\MyProject\MyProject\bin\Debug\Stimulsoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.BusinessObjects">
+      <HintPath>..\..\..\..\..\..\c#\Session12\MyProject\MyProject\bin\Debug\Stimulsoft.BusinessObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls">
+      <HintPath>..\..\..\..\..\..\c#\Session12\MyProject\MyProject\bin\Debug\Stimulsoft.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls.Win, Version=2013.2.1612.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\c#\Session12\MyProject\MyProject\bin\Debug\Stimulsoft.Controls.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Database">
+      <HintPath>..\..\..\..\..\..\c#\Session12\MyProject\MyProject\bin\Debug\Stimulsoft.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Design">
+      <HintPath>F:\Documents\c#\Session12\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Editor">
+      <HintPath>..\..\..\..\..\..\c#\Session12\MyProject\MyProject\bin\Debug\Stimulsoft.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report">
+      <HintPath>..\..\..\..\..\..\c#\Session12\MyProject\MyProject\bin\Debug\Stimulsoft.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Check">
+      <HintPath>..\..\..\..\..\..\c#\Session12\MyProject\MyProject\bin\Debug\Stimulsoft.Report.Check.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Compare">
+      <HintPath>..\..\..\..\..\..\c#\Session12\MyProject\MyProject\bin\Debug\Stimulsoft.Report.Compare.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Design">
+      <HintPath>..\..\..\..\..\..\c#\Session12\MyProject\MyProject\bin\Debug\Stimulsoft.Report.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Design.SLViewer">
+      <HintPath>..\..\..\..\..\..\c#\Session12\MyProject\MyProject\bin\Debug\Stimulsoft.Report.Design.SLViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Helper">
+      <HintPath>..\..\..\..\..\..\c#\Session12\MyProject\MyProject\bin\Debug\Stimulsoft.Report.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Win">
+      <HintPath>..\..\..\..\..\..\c#\Session12\MyProject\MyProject\bin\Debug\Stimulsoft.Report.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.SqlServer.Compact.4.0.8876.1\lib\net40\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Controls, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Reports.Ultimate 2014.3\Bin\System.Windows.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Data.Input, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Reports.Ultimate 2014.3\Bin\System.Windows.Controls.Data.Input.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <HintPath>C:\Program Files (x86)\Stimulsoft Reports.Ultimate 2014.3\Bin\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Analytics, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.ChartView, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.CodedUI.2010, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadMarkupEditor, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RichTextBox, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Scheduler, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.SpellChecker, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Aqua, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.HighContrastBlack, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2007Black, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2007Silver, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2010Black, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2010Blue, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2010Silver, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2013Dark, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2013Light, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetro, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroBlue, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroTouch, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Dark, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Light, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Windows7, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI.Design, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikData, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Viewer.SL, Version=2014.3.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Reports.Ultimate 2014.3\Bin\Viewer.SL.dll</HintPath>
+    </Reference>
+    <Reference Include="VisualStyleBuilder.Design, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataLayer\Configuration\ConfigBlock.cs" />
+    <Compile Include="DataLayer\Configuration\ConfigCard.cs" />
+    <Compile Include="DataLayer\Configuration\ConfigCheck.cs" />
+    <Compile Include="DataLayer\Configuration\ConfigContractor.cs" />
+    <Compile Include="DataLayer\Configuration\ConfigPerson.cs" />
+    <Compile Include="DataLayer\Configuration\ConfigFish.cs" />
+    <Compile Include="DataLayer\Configuration\ConfigPayment.cs" />
+    <Compile Include="DataLayer\Configuration\ConfigPhoneBook.cs" />
+    <Compile Include="DataLayer\Configuration\ConfigSalary.cs" />
+    <Compile Include="DataLayer\Configuration\ConfigSkill.cs" />
+    <Compile Include="DataLayer\Configuration\ConfigStatement.cs" />
+    <Compile Include="DataLayer\Configuration\ConfigStatementItem.cs" />
+    <Compile Include="DataLayer\Configuration\ConfigStorageItem.cs" />
+    <Compile Include="DataLayer\Configuration\ConfigTankhah.cs" />
+    <Compile Include="DataLayer\Configuration\ConfigurProject.cs" />
+    <Compile Include="DataLayer\Configuration\ConfigurUnit.cs" />
+    <Compile Include="DataLayer\Configuration\ConfigCredit.cs" />
+    <Compile Include="DataLayer\Configuration\ConfigPurchaseListItem.cs" />
+    <Compile Include="DataLayer\Configuration\CofigPurcheseList.cs" />
+    <Compile Include="DataLayer\Configuration\ConfigFactor.cs" />
+    <Compile Include="DataLayer\Configuration\ConfigFactor_Item.cs" />
+    <Compile Include="DataLayer\Configuration\ConfigCostOfService.cs" />
+    <Compile Include="DataLayer\Configuration\ConfigPercentage.cs" />
+    <Compile Include="DataLayer\Configuration\ConfigUser.cs" />
+    <Compile Include="DataLayer\Configuration\ConfigUserIO.cs" />
+    <Compile Include="DataLayer\Corporation.cs" />
+    <Compile Include="Form_ChartPayToPeople.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ChartPayToPeople.Designer.cs">
+      <DependentUpon>Form_ChartPayToPeople.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ChartSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ChartSalary.Designer.cs">
+      <DependentUpon>Form_ChartSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Accounting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Accounting.Designer.cs">
+      <DependentUpon>Form_Accounting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Block%27sProjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Block%27sProjects.Designer.cs">
+      <DependentUpon>Form_Block%27sProjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CreditTankhah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_CreditTankhah.Designer.cs">
+      <DependentUpon>Form_CreditTankhah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ListpersonProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ListpersonProject.Designer.cs">
+      <DependentUpon>Form_ListpersonProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ListSourceStorage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ListSourceStorage.Designer.cs">
+      <DependentUpon>Form_ListSourceStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_PayToPeople1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_PayToPeople1.Designer.cs">
+      <DependentUpon>Form_PayToPeople1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_PayToPeople2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_PayToPeople2.Designer.cs">
+      <DependentUpon>Form_PayToPeople2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_RegNewPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_RegNewPayment.Designer.cs">
+      <DependentUpon>Form_RegNewPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Factor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Factor.Designer.cs">
+      <DependentUpon>Form_Factor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_FactorList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_FactorList.Designer.cs">
+      <DependentUpon>Form_FactorList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ListSalaries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ListSalaries.Designer.cs">
+      <DependentUpon>Form_ListSalaries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Payment.Designer.cs">
+      <DependentUpon>Form_Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_PaymentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_PaymentList.Designer.cs">
+      <DependentUpon>Form_PaymentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Person.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Person.Designer.cs">
+      <DependentUpon>Form_Person.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Project%27sPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Project%27sPerson.Designer.cs">
+      <DependentUpon>Form_Project%27sPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_PurchaseList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_PurchaseList.Designer.cs">
+      <DependentUpon>Form_PurchaseList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_EnterProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_EnterProject.Designer.cs">
+      <DependentUpon>Form_EnterProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_RegSourceStorage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_RegSourceStorage.Designer.cs">
+      <DependentUpon>Form_RegSourceStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ReportPeople.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ReportPeople.Designer.cs">
+      <DependentUpon>Form_ReportPeople.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Salary.Designer.cs">
+      <DependentUpon>Form_Salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ShowBlock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ShowBlock.Designer.cs">
+      <DependentUpon>Form_ShowBlock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Statement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Statement.Designer.cs">
+      <DependentUpon>Form_Statement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Storage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Storage.Designer.cs">
+      <DependentUpon>Form_Storage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_TankhahPurchaseLists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_TankhahPurchaseLists.Designer.cs">
+      <DependentUpon>Form_TankhahPurchaseLists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_People.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_People.Designer.cs">
+      <DependentUpon>Form_People.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ListOfProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ListOfProject.Designer.cs">
+      <DependentUpon>Form_ListOfProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_TypeStorage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_TypeStorage.Designer.cs">
+      <DependentUpon>Form_TypeStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Unit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Unit.Designer.cs">
+      <DependentUpon>Form_Unit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Users\Form_Acess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Users\Form_Acess.Designer.cs">
+      <DependentUpon>Form_Acess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Users\Form_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Users\Form_Login.Designer.cs">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_MainMenu.Designer.cs">
+      <DependentUpon>Form_MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_RegContractor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_RegContractor.Designer.cs">
+      <DependentUpon>Form_RegContractor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_RegFactorListItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_RegFactorListItem.Designer.cs">
+      <DependentUpon>Form_RegFactorListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_RegSkill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_RegSkill.Designer.cs">
+      <DependentUpon>Form_RegSkill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_RegTankhah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_RegTankhah.Designer.cs">
+      <DependentUpon>Form_RegTankhah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Setting.Designer.cs">
+      <DependentUpon>Form_Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Tankhah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Tankhah.Designer.cs">
+      <DependentUpon>Form_Tankhah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Users\Form_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Users\Form_User.Designer.cs">
+      <DependentUpon>Form_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Users\Form_UserIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Users\Form_UserIO.Designer.cs">
+      <DependentUpon>Form_UserIO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Users\PasswordHasher.cs" />
+    <Compile Include="Form_Users\Security.cs" />
+    <Compile Include="Temp\GRidShow.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\BankFish.cs" />
+    <Compile Include="Model\Block.cs" />
+    <Compile Include="Model\CardToCard.cs" />
+    <Compile Include="Model\Check.cs" />
+    <Compile Include="Model\Contractor.cs" />
+    <Compile Include="Model\CostOfService.cs" />
+    <Compile Include="Model\Credit.cs" />
+    <Compile Include="Model\Login_Classes\UnitSoftwar.cs" />
+    <Compile Include="Model\Login_Classes\User.cs" />
+    <Compile Include="Model\Login_Classes\User_IO.cs" />
+    <Compile Include="Model\Payment.cs" />
+    <Compile Include="Model\Person.cs" />
+    <Compile Include="Model\Factor.cs" />
+    <Compile Include="Model\Factor_Item.cs" />
+    <Compile Include="Model\Percentage.cs" />
+    <Compile Include="Model\PhoneBook.cs" />
+    <Compile Include="Model\PurchaseList.cs" />
+    <Compile Include="Model\PurchaseListItem.cs" />
+    <Compile Include="Model\Salary.cs" />
+    <Compile Include="Model\Skill.cs" />
+    <Compile Include="Model\Statement.cs" />
+    <Compile Include="Model\Storage.cs" />
+    <Compile Include="Model\StorageItem.cs" />
+    <Compile Include="Model\Tankhah.cs" />
+    <Compile Include="Model\Type_Storage.cs" />
+    <Compile Include="Model\Unit.cs" />
+    <Compile Include="Form_RegisterProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_RegisterProject.Designer.cs">
+      <DependentUpon>Form_RegisterProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SelectProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SelectProject.Designer.cs">
+      <DependentUpon>Form_SelectProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Project.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerErrorManagment.cs" />
+    <Compile Include="Model\StatementItem.cs" />
+    <Compile Include="Temp\SalaryTemp.cs" />
+    <Compile Include="Temp\TempCost.cs" />
+    <Compile Include="Temp\TempFactor.cs" />
+    <Compile Include="Temp\TempItem.cs" />
+    <Compile Include="Utility.cs" />
+    <Compile Include="View\BankFish.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\BankFish.Designer.cs">
+      <DependentUpon>BankFish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CardtoCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\CardtoCard.Designer.cs">
+      <DependentUpon>CardtoCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Check.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Check.Designer.cs">
+      <DependentUpon>Check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pure.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Pure.Designer.cs">
+      <DependentUpon>Pure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RegPeopleForPAy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\RegPeopleForPAy.Designer.cs">
+      <DependentUpon>RegPeopleForPAy.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form_ChartPayToPeople.resx">
+      <DependentUpon>Form_ChartPayToPeople.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ChartSalary.resx">
+      <DependentUpon>Form_ChartSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Accounting.resx">
+      <DependentUpon>Form_Accounting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Block%27sProjects.resx">
+      <DependentUpon>Form_Block%27sProjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_CreditTankhah.resx">
+      <DependentUpon>Form_CreditTankhah.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ListpersonProject.resx">
+      <DependentUpon>Form_ListpersonProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ListSourceStorage.resx">
+      <DependentUpon>Form_ListSourceStorage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_PayToPeople1.resx">
+      <DependentUpon>Form_PayToPeople1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_PayToPeople2.resx">
+      <DependentUpon>Form_PayToPeople2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_RegNewPayment.resx">
+      <DependentUpon>Form_RegNewPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Factor.resx">
+      <DependentUpon>Form_Factor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_FactorList.resx">
+      <DependentUpon>Form_FactorList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ListSalaries.resx">
+      <DependentUpon>Form_ListSalaries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Payment.resx">
+      <DependentUpon>Form_Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_PaymentList.resx">
+      <DependentUpon>Form_PaymentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Person.resx">
+      <DependentUpon>Form_Person.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Project%27sPerson.resx">
+      <DependentUpon>Form_Project%27sPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_PurchaseList.resx">
+      <DependentUpon>Form_PurchaseList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_EnterProject.resx">
+      <DependentUpon>Form_EnterProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_RegSourceStorage.resx">
+      <DependentUpon>Form_RegSourceStorage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ReportPeople.resx">
+      <DependentUpon>Form_ReportPeople.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Salary.resx">
+      <DependentUpon>Form_Salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ShowBlock.resx">
+      <DependentUpon>Form_ShowBlock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Statement.resx">
+      <DependentUpon>Form_Statement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Storage.resx">
+      <DependentUpon>Form_Storage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_TankhahPurchaseLists.resx">
+      <DependentUpon>Form_TankhahPurchaseLists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_People.resx">
+      <DependentUpon>Form_People.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ListOfProject.resx">
+      <DependentUpon>Form_ListOfProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_TypeStorage.resx">
+      <DependentUpon>Form_TypeStorage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Unit.resx">
+      <DependentUpon>Form_Unit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Users\Form_Acess.resx">
+      <DependentUpon>Form_Acess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Users\Form_Login.resx">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_MainMenu.resx">
+      <DependentUpon>Form_MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_RegContractor.resx">
+      <DependentUpon>Form_RegContractor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_RegFactorListItem.resx">
+      <DependentUpon>Form_RegFactorListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_RegSkill.resx">
+      <DependentUpon>Form_RegSkill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_RegTankhah.resx">
+      <DependentUpon>Form_RegTankhah.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Setting.resx">
+      <DependentUpon>Form_Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Tankhah.resx">
+      <DependentUpon>Form_Tankhah.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_RegisterProject.resx">
+      <DependentUpon>Form_RegisterProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SelectProject.resx">
+      <DependentUpon>Form_SelectProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Users\Form_User.resx">
+      <DependentUpon>Form_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Users\Form_UserIO.resx">
+      <DependentUpon>Form_UserIO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="View\BankFish.resx">
+      <DependentUpon>BankFish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CardtoCard.resx">
+      <DependentUpon>CardtoCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Check.resx">
+      <DependentUpon>Check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Pure.resx">
+      <DependentUpon>Pure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RegPeopleForPAy.resx">
+      <DependentUpon>RegPeopleForPAy.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3399_8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\esfahan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\esfahan_night1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Isfahan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back english.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\isfahan_plate_ii_11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\isfahan_plate1_3_jame11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\isfahan_plateii_51.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\isfahan_plateiii_51.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\isfahan-imam-night1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jolfa church11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jolfa-0111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lotfallah_Mosque_Isfahan1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Naghshe Jahan Sq1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oldIsfahan-ImamSq21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PC2710191.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sheikh Lotf Allah Mosque Isfahan Iran_200903031208281.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sade.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2013-03-22-ti-yellow-hard-hat-on-a-construction-site-300x200-ss-57344839.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backpersonel form.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backpersonel form1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Banka-personel-alımları-2015.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\100771-ed93041d0af34c1d8b1692d9dbb4ec38.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %289%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainFormDesignLogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sade1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sade11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sade2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %2810%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salary-negotiation.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\storage-warehouse-building1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainFormDesignLogo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Netvibes-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RcdMbRqXi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\url.png" />
+    <None Include="Resources\Print-icon.png" />
+    <None Include="Resources\compstui_64003.png" />
+    <None Include="Resources\Error-Symbol-icon.png" />
+    <None Include="Resources\Actions-edit-delete-icon1.png" />
+    <Content Include="Designcontest-Ecommerce-Business-Company-building.ico" />
+    <None Include="Resources\Aha-Soft-Large-Business-Printer.ico" />
+    <None Include="Resources\1.bmp" />
+    <Content Include="Resources\compstui_64003.ico" />
+    <None Include="Resources\Oxygen-Icons.org-Oxygen-Actions-edit-delete %281%29.ico" />
+    <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\Del.bmp" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    if not exist "$(TargetDir)x86" md "$(TargetDir)x86"
+    xcopy /s /y "$(SolutionDir)packages\Microsoft.SqlServer.Compact.4.0.8876.1\NativeBinaries\x86\*.*" "$(TargetDir)x86"
+    if not exist "$(TargetDir)amd64" md "$(TargetDir)amd64"
+    xcopy /s /y "$(SolutionDir)packages\Microsoft.SqlServer.Compact.4.0.8876.1\NativeBinaries\amd64\*.*" "$(TargetDir)amd64"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
